@@ -135,7 +135,7 @@ if (akys === 'Rudos') {
 }
 
 if (akys === 'Pilkos') {
-    console.log('Niekuo neipatinngi...');
+    console.log('Niekuo neipatingi...');
 }
 
 if (akys === 'Raudonos') {
