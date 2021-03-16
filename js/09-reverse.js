@@ -8,6 +8,7 @@ let reverse = '';
 
 for (let i = 0; i < text.length; i++) {
     reverse = text[i] + reverse;
+    console.log(reverse);
 }
 
 console.log(text, '->', reverse);
