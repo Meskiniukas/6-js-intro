@@ -6,6 +6,11 @@ function daugyba(a, b) {
     // if (isNaN(a) || a === Infinity || a === -Infinity) {
     //     return `Pirmasis parametras turi buti normalus skaicius ir negali buti ${a}`;
     // }
+
+    // if ('' + a === 'NaN' || Math.abs(a) === Infinity {
+    //     return `Pirmasis parametras turi buti normalus skaicius ir negali buti ${a}`;
+    // }
+
     if (!isFinite(a)) {
         return `Pirmasis parametras turi buti normalus skaicius ir negali buti ${a}`;
     }
