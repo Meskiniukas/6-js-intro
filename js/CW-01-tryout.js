@@ -7,7 +7,7 @@ function positiveSum(arr) {
     }
       console.log(ps);
       return ps
-  }
+}
 
-    console.log(positiveSum([1, 2, 4, 4, 5, -6]));
+console.log(positiveSum([1, 2, 4, 4, 5, -6]));
 console.log('Labas rytas');
