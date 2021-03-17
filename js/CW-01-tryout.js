@@ -5,8 +5,8 @@ function positiveSum(arr) {
             ps += arr[i]
         }
     }
-      console.log(ps);
-      return ps
+    console.log(ps);
+    return ps;
 }
 
 console.log(positiveSum([1, 2, 4, 4, 5, -6]));
