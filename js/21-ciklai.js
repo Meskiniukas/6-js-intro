@@ -16,6 +16,15 @@ JS galimi ciklai ir "cikliskos" funkcijos/metodai:
 
 const list = [1, -5, 78, 2, 11, -14, 0, -3];
 
+list.forEach(function (aitemas, jindeksas, arejus) {
+    console.log(jindeksas, ' -- ', aitemas, 'akūkū', arejus);
+})
+
+list.forEach((aitemas, jindeksas, arejus) => console.log(jindeksas, ' -- ', aitemas, 'akūkū', arejus))
+
+
+
+
 // FOR
 // break: nutraukia ciklo darba
 // continue: eiti i sekancia ciklo iteracija, jei tokia yra
@@ -29,7 +38,7 @@ for (let i = 0; i < list.length; i++) {
     console.log(item);
 }
 
-console.clear();
+// console.clear();
 
 
 // FOR-IN
@@ -128,6 +137,7 @@ console.log(dlSuma);
 
 // MAP
 // map() metodas perejes per duota sarasa grazina tokio pacio dydzio sarasa, tik su pakeistomis reiksmemis
+// veikia tik su Array
 
 const mapList = [1, 2, 3, 4, 5, 6];
 const forListSquare = [];
