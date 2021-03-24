@@ -204,3 +204,41 @@ console.log(isDidziosios);
 // REDUCE
 // eina per sarasa, paima visas reiksmes is eiles ir su jomis padaro viena bendra rezultata
 // pvz.: jei turim pazymiu sarasa, tai eina per pazymius ir suskaiciuoja pazymiu suma
+
+// pradinė reikįmė - pirmasis narys (REM!)
+
+const petriukoPazymiai = [10, 2, 8, 6, 4];
+
+let petriukoPazymiuSuma = 20;
+petriukoPazymiai.forEach(p => petriukoPazymiuSuma += p);
+console.log(petriukoPazymiuSuma);
+
+const reducedPazymiai = petriukoPazymiai.reduce((total, paz) => total + paz, 0);
+console.log(reducedPazymiai);
+
+/***************************************************/
+
+// koks gausis tekstas, jei sujungsime visu zodziu pirmas raides
+const dictionary2 = ['Labas', 'rytas', 'Lietuva', 'sakau', 'tau'];
+
+const short = dictionary2.reduce((total, word) => total + word[0], '');
+
+console.log(short);
+
+/***************************************************/
+
+console.clear();
+
+const sortAbc = ['a', 'ä', 'c', 'fabrikas', 'fancy', 'baklazanas', 'Bermudai', 'd', 'Antanas']
+const sortedAbc = sortAbc.sort();
+console.log(sortedAbc);
+
+const sortList = [1, -5, 78, 2, 11, -14, 0, -3];
+// console.log(sortList.sort());
+// const sortedNumber = sortList.sort((a, b) => a - b ? -1 : 1);
+// const sortedNumber = sortList.sort((a, b) => a > b ? -1 : 1);
+// const sortedNumber = sortList.sort((a, b) => a - b);
+const sortedNumber = [...sortList].sort((a, b) => b - a);
+
+console.log(sortedNumber);
+console.log(sortList);
