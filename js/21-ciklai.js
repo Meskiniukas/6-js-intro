@@ -227,7 +227,7 @@ console.log(short);
 
 /***************************************************/
 
-console.clear();
+// console.clear();
 
 const sortAbc = ['a', 'ä', 'c', 'fabrikas', 'fancy', 'baklazanas', 'Bermudai', 'd', 'Antanas']
 const sortedAbc = sortAbc.sort();
@@ -235,10 +235,10 @@ console.log(sortedAbc);
 
 const sortList = [1, -5, 78, 2, 11, -14, 0, -3];
 // console.log(sortList.sort());
-// const sortedNumber = sortList.sort((a, b) => a - b ? -1 : 1);
-// const sortedNumber = sortList.sort((a, b) => a > b ? -1 : 1);
+// const sortedNumber = sortList.sort((a, b) => a - b ? -1 : 1); // lievas (!)
+// const sortedNumber = sortList.sort((a, b) => a > b ? -1 : 1); // a > b mažėjimo; a < b didėjimo
 // const sortedNumber = sortList.sort((a, b) => a - b);
-const sortedNumber = [...sortList].sort((a, b) => b - a);
+const sortedNumber = [...sortList].sort((a, b) => b - a); // mažėjimo tvarka; a - b --- didėjimo tvarka; ... --sąrašo išvardinimas
 
 console.log(sortedNumber);
 console.log(sortList);
