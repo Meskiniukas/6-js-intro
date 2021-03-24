@@ -239,6 +239,6 @@ const sortList = [1, -5, 78, 2, 11, -14, 0, -3];
 // const sortedNumber = sortList.sort((a, b) => a > b ? -1 : 1); // a > b mažėjimo; a < b didėjimo
 // const sortedNumber = sortList.sort((a, b) => a - b);
 const sortedNumber = [...sortList].sort((a, b) => b - a); // mažėjimo tvarka; a - b --- didėjimo tvarka; ... --sąrašo išvardinimas
-
+                                                          // ... --kad nekeistų originalių duomenų (REM !)
 console.log(sortedNumber);
 console.log(sortList);

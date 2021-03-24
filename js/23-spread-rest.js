@@ -18,7 +18,7 @@ console.log(spread5);
 const spread6 = [...spread1, ...spread4];
 console.log(spread6);
 
-console.clear();
+// console.clear();
 
 // rest operatorius
 
@@ -39,7 +39,7 @@ const apieMane = (name, age, ...list) => {
 const petras = apieMane('Petras', 55, 'pyragus', 'obuoli', 'kriause');
 console.log(petras);
 
-console.clear();
+// console.clear();
 
 // primityvios reiksmes
 
